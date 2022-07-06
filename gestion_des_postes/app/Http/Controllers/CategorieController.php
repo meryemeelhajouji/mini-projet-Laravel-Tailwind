@@ -9,18 +9,18 @@ class CategorieController extends Controller
 {
     //
     public function NewCategorie(){
-        $newContact=new Categorie();
-        $newContact->name = "politique";
+        $newCategorie=new Categorie();
+        $newCategorie->name = "politique";
        
-        $newContact->save();
+        $newCategorie->save();
 
     }
-    public function listContact(){
+    public function listCategorie(){
   
-       $contacts = Categorie::all();
+       $categorie = Categorie::all();
     //    dd($contacts); show 
 
-   return view('contacts', ['contacts'=>$contacts]);
+   return view('categorie', ['categorie'=>$categorie]);
         
     }
 }

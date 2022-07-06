@@ -26,5 +26,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/AddPoste','CategorieController@NewCategorie' );
-Route::get('/ListPoste','CategorieController@listContact' );
+Route::get('/AddPoste','PosteController@NewPoste' );
+Route::get('/ListPoste','PosteController@listPoste' );
