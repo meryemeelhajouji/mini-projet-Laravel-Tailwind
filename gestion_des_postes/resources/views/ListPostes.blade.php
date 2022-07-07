@@ -15,7 +15,7 @@ lr<!DOCTYPE html>
             <div class="flex flex-col justify-between item-center m-5">
 
                 <div class=" flex flex-row-reverse m-5">
-                <a href="AddPoste" class=" text-center w-52 m-5  bg-blue-500 text-white font-bold py-2 px-4 " > Add New Poste</a> </div>
+                <a href="form" class=" text-center w-52 m-5  bg-blue-500 text-white font-bold py-2 px-4 " > Add New Poste</a> </div>
                 <table   class="border-collapse border border-slate-400 "> 
                     <thead class="m-3">
                         <tr><th class="border border-slate-300 ..."> Title </th>

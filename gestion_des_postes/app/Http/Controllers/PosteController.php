@@ -20,21 +20,23 @@ class PosteController extends Controller
     
      
 
-    // public function NewPoste(){
+    public function NewPoste(Request $request){
   
-    //     $newPoste=new Poste();
-    //     $newPoste->title = "Learn Laravel 9";
-    //     $newPoste->slug = "learn_laravel_9";
-    //     $newPoste->description = "My first projet laravel";
-    //     $newPoste->image = "sdhfklerkf^ps^dofoz";
-    //     $newPoste->publish = "oui";
-    //     $newPoste->status = "oui";
-    //     $newPoste->categorie_id = 1;
-    //     $newPoste->users_id = 1;
+        $newPoste=new Poste();
+        $newPoste->title =$request->input('title'); 
+        $newPoste->slug =$request->input('slug');
+        $newPoste->categorie_id = $request->input('categorie_id');
+        $newPoste->users_id =1;
+        $newPoste->description = $request->input('description');
+        $newPoste->image = $request->input('image');
+        $newPoste->publish = 1;
+        $newPoste->status = $request->input('status');
+        $newPoste->status = $request->input('status');
+      
 
-    //     $newPoste->save();
+        $newPoste->save();
 
-    // }
+    }
     public function listPoste(){
   
        $Poste = Poste::all();

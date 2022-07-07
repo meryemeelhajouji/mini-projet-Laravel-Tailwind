@@ -26,6 +26,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/AddPoste','PosteController@createPosteForm' );
-Route::get('/ListPoste','PosteController@listPoste' );
+Route::get('/form','PosteController@createPosteForm' );
+Route::post('ListPoste','PosteController@listPoste' );
+
 // Route::get('/AddCate','CategorieController@listCategorie' );
+Route::post('AddPostes','PosteController@NewPoste' );
