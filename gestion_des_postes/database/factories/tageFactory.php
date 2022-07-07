@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\categorie>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\tage>
  */
-class categorieFactory extends Factory
+class tageFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,7 +19,7 @@ class categorieFactory extends Factory
         return [
             //
             'name' => fake()->name(),
-          
+
         ];
     }
 }

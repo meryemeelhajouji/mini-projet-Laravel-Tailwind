@@ -11,32 +11,37 @@ lr<!DOCTYPE html>
 {{--  class="flex flex-col justify-between item-center" --}}
 <body>
     <main>
-            <h1 class =" text-xl font-bold text-center m-3 text-rose-500"> List des contact</h1>
-            <div class="flex flex-col justify-between item-center m-4">
-                <table > 
+            <h1 class =" text-xl font-bold text-center m-5 text-rose-500"> List des contact</h1>
+            <div class="flex flex-col justify-between item-center m-5">
+
+                <div class=" flex flex-row-reverse m-5">
+                <a href="AddPoste" class=" text-center w-52 m-5  bg-blue-500 text-white font-bold py-2 px-4 " > Add New Poste</a> </div>
+                <table   class="border-collapse border border-slate-400 "> 
                     <thead class="m-3">
-                        <tr><th> Title </th>
-                            <th> categorie </th>
-                            <th> tages </th>
-                            <th> author </th>
-                            <th> create date </th>
-                            <th> Action </th>
+                        <tr><th class="border border-slate-300 ..."> Title </th>
+                            <th class="border border-slate-300 ..."> categorie </th>
+                            <th class="border border-slate-300 ..."> tages </th>
+                            <th class="border border-slate-300 ..."> author </th>
+                            <th class="border border-slate-300 ..."> create date </th>
+                            <th class="border border-slate-300 ..."> Action </th>
                         </tr>
                     </thead>
                     @foreach($Poste as $Poste)
                     <tr>
                       
-                           <th  class="m-3 text-center">
+                           <th class="border border-slate-300 ...">
                                {{ $Poste -> title }} </th>
-                             <th>  {{ $Poste -> categorie_id }}</th> 
-                             <th>  {{ $Poste -> categorie_id }}</th> 
-                             <th> </th> 
-                             <th>  {{ $Poste -> users_id }}</th> 
-                             <th> {{ $Poste -> status }} </th> 
+                             <th class="border border-slate-300 ...">  {{ $Poste -> categorie_id }}</th> 
+                             <th class="border border-slate-300 ...">  {{ $Poste -> categorie_id }}</th> 
+                             <th class="border border-slate-300 ..."> </th> 
+                             <th class="border border-slate-300 ...">  {{ $Poste -> users_id }}</th> 
+                             <th class="border border-slate-300 ..."> {{ $Poste -> status }} </th> 
                     </tr>   
                 
                    @endforeach
                     </table>
+
+                  
             </div>
     </main>
   

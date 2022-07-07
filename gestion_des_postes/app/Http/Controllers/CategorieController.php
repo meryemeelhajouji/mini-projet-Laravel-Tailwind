@@ -8,19 +8,20 @@ use App\Models\Categorie;
 class CategorieController extends Controller
 {
     //
-    public function NewCategorie(){
-        $newCategorie=new Categorie();
-        $newCategorie->name = "politique";
+    // public function NewCategorie(){
+    //     $newCategorie=new Categorie();
+    //     $newCategorie->name = "politique";
        
-        $newCategorie->save();
+    //     $newCategorie->save();
 
-    }
+    // }
     public function listCategorie(){
   
-       $categorie = Categorie::all();
+       $categories = Categorie::all();
     //    dd($contacts); show 
 
-   return view('categorie', ['categorie'=>$categorie]);
+//    return view('AddPoste', ['categories'=>$categorie]);
+//    return view('AddPoste', compact('categories'));
         
     }
 }

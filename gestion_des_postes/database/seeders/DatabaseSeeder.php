@@ -22,19 +22,19 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersSeeder::class,
         ]);
+        $this->call([
+            CategorieSeeder::class,
+        ]);
+        $this->call([
+            TageSeeder::class,
+        ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $admin = User::create([
-            'name' => 'Admin',
-            'email' => 'admin@ajicod.com',
-            'email_verified_at'=>Carbon::now(),
-            'password' => Hash::make('password'),
-            'remember_token' => Str::random(10)
-        ]);
+
 
     }
 }
